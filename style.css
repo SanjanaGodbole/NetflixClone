@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+/*Netflix Background Image*/
+.background
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-img
+{
+    width: 100%;
+   transform: scale(1.4);
+}
+
+/*Netflix Black Transparent Layer on Background Image*/
+
+.tint
+{
+    background-color: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/*Navigation*/
+.nav
+{
+    position: absolute;
+    top:0;
+    /*justify-content: space-between; won't work until there is some width for nav*/
+    /* width: 100%; */
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    top:6%;
+    left:50%;
+    /*By adjusting the title size,helping left and top tp center the logo & button*/
+    transform: translate(-50%,-50%);
+    align-items: center;
+    /*make sign-in button center*/
+}
+
+.nav-flex
+{
+display: flex;
+gap:20px
+}
+
+.login-btn
+{
+    padding:8px 30px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    border:none;
+    background-color: rgb(206,14,23);
+    color: white;
+}
+
+.en-btn
+{
+background-color:#0000006e;
+color: white;
+border: 1px solid#eeeeee87;
+padding:8px 30px;
+font-size: 14px;
+border-radius: 6px;
+font-weight: bold;
+}
+
+/*Content*/
+.content
+{
+    /*bze of overflow, what ever is going beyond 100%/ 100vh not visible on screen*/
+    position: absolute; 
+    top:0;
+    color: white;
+    top:50%;
+    left:50%;
+    /*By adjusting the title size,helping left and top tp center the title*/
+    transform: translate(-50%,-50%);
+    width: 840px;
+    text-align: center;
+   
+}
+
+.title
+{
+    font-size: 45px;
+    text-align: center;
+}
+
+.sub-title
+{
+    font-size: 26px;
+}
+
+.desc
+{
+    font-size: 18px;
+}
+
+.content-flex{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    
+}
+
+.content-input
+{
+    width:320px;
+    padding: 14px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid#eeeeee87;
+    border-radius: 4px;
+
+}
+
+
+.content-btn
+{
+padding: 14px;
+background-color: rgb(206,14,23);
+color: white;
+font-size: 18px;
+border-radius: 4px;
+font-weight: bold;
+border: none;
+border-radius: 4px;
+display: flex;
+align-items:center;
+gap:10px;
+width: 190px;
+justify-content: center;
+
+}
+
+.mt-4
+{
+    margin-top: 4px;
+}
+
+/*Enjoy your TV Section */
+.container
+{
+    color: white;
+    display: flex;
+    width: 990px;
+    margin: 100px auto;
+    gap:80px ;
+    align-items: center;
+}
+
+.left
+{
+width:50% ;
+}
+
+.right
+{
+width:50% ;
+}
+
+.img
+{
+ /* to make left and right section on same line */
+position: relative; 
+width: 100%; /*To fit video into TV img*/
+
+}
+
+.video
+{
+    margin-left: 40px;
+    position: absolute;
+    width: 80%; /*To fit video into TV img*/
+    height: 90%;
+    object-fit: contain;
+    
+}
+.real-tv
+{
+    width:495px;
+    display: block;
+    position: relative;
+}
+
+.heading
+{
+    font-size: 48px;
+}
+
+.sub-heading
+{
+    font-size: 24px;
+}
+
+section{
+    border-bottom: 8px solid #eeeeee39;
+}
+
+.freq-container
+{
+    text-align: center;
+    color:white
+}
+.no-bullets {
+    list-style-type: none;
+}
+
+.freq-title
+{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+li
+{
+    background-color: #414141;
+    padding:20px;
+    margin: 10px 150px;
+  
+}
+
+.que-list
+{
+display: flex;
+justify-content: space-between;
+}
+
+.que,
+.more-btn
+{
+    font-size: 26px;
+}
+
+
